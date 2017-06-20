@@ -16,6 +16,7 @@
     This is an example of how to add features to index.html for only one environment.
    -->
     <% if (htmlWebpackPlugin.options.trackJSToken) { %>
+    <!-- track using trackJs.track('ahoy trackjs!'); -->
     <!-- BEGIN TRACKJS -->
     <script type="text/javascript">window._trackJs = { token: '<%=htmlWebpackPlugin.options.trackJSToken%>' };</script>
     <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
